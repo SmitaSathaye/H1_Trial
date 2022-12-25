@@ -1,17 +1,15 @@
-name: Chrome
-
-on: push
-
+name: Sauce demo
+on:
+  schedule:    
+    - cron: '0 7 * * *'
 jobs:
-  chrome:
-    runs-on: ubuntu-18.04
+    runs-on: windows-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Chrome
-        uses: cypress-io/github-action@v5
-        timeout-minutes: 10
-        with:
-          build: npm run build
-          start: npm start
-          browser: chrome
+      - name: Setup npm package
+        run: npm init -y && npm install
+      - name: Regression test
+        uses: cypress-io/github-action@v5.0.2
+        with:                          #          
+          command: npm run test    
