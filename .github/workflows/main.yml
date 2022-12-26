@@ -2,16 +2,18 @@ name: main
 on: [push]
 
 jobs:
-  # TODO: add some test jobs
-
   release:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
-      - name: Cypress run
-        uses: cypress-io/github-action@v4.2.0 # use the explicit version number
+      - name: Chrome run
+        uses: cypress-io/github-action@v4.2.0 
         with:
           command: npm run report
+          browser: chrome
+        name: Edge run
+        uses: cypress-io/github-action@v4.2.0 
+        with:
+          command: npm run report
+          browser: edge
