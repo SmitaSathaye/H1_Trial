@@ -16,9 +16,6 @@ Purchase Feature:
 2. User is able to purchase existing products.
 3. User is not able to purchase non existing product and checks error messages.
 
-This project has 5 step_definitions which are bindings of the above 2 feature files.
-It also has 5 page objects which covers functions and locators.
-
 # Report and Tags:
 HTML report will be generated with different tags.
 THRNDL-489: The user is able to log in.

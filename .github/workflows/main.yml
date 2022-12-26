@@ -1,13 +1,14 @@
-name: Ubuntu
+name: E2E on Chrome
 on: [push]
 jobs:
-  ubuntu-22:
-    runs-on: ubuntu-22.04
+  cypress-run:
+    runs-on: ubuntu-20.04
+    # let's make sure our tests pass on Chrome browser
+    name: E2E on Chrome
     steps:
-      # print Ubuntu version
-      - run: cat /etc/lsb-release
       - name: Checkout
         uses: actions/checkout@v3
-
       - name: Cypress run
         uses: cypress-io/github-action@v5
+        with:
+          browser: chrome
