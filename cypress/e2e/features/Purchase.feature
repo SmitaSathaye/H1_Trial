@@ -6,7 +6,7 @@ Background:
         When User login with the username "standard_user" and password "secret_sauce"
 
 @THRNDL-536 @Positive
-Scenario: @THRNDL-536 Validate that user is able to purchase product 
+Scenario: @THRNDL-536 Validate that user is able to add product in cart 
         When Product page is presented        
         And User adds product "Backpack" to cart
         Then User navigates to cart 
