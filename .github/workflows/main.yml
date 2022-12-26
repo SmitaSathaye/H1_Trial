@@ -15,3 +15,7 @@ jobs:
         uses: cypress-io/github-action@v4.2.0 
         with:
           command: npm run edge
+      - name: Firefox run
+        uses: cypress-io/github-action@v4.2.0 
+        with:
+          command: npm run firefox

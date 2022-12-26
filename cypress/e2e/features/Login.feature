@@ -15,7 +15,7 @@ Scenario Outline: THRNDL-489_Negative Validate the error message for locked out 
         Then Page has text "<text>"
 Examples:
     | user             | password      | text                                                                      |
-    | locked_out_user  | secret_sauce  | Epic sadface: Sorry, this user has been locked out                          |
+    | locked_out_user  | secret_sauce  | Epic sadface: Sorry, this user has been locked out                        |
     | standard_user    | secret_saue$  | Epic sadface: Username and password do not match any user in this service |
     | Mickey           | secret_sauce  | Epic sadface: Username and password do not match any user in this service |
     | Mickey           |               | Epic sadface: Password is required                                        |
