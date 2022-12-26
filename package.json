@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "open": "npx cypress open --e2e --browser chrome",
-    "test": "npx cypress run --e2e",
+    "report": "npx cypress run --e2e --browser chrome",
     "runTHRNDL-536": "npx cypress run --e2e --browser chrome --env tags=\"@THRNDL-536\"",
     "runPositive": "npx cypress run --e2e --browser chrome --env tags=\"@Positve\"",
     "runNegative": "npx cypress run --e2e --browser chrome --env tags=\"@Negative\"",
@@ -22,7 +22,9 @@
     "@bahmutov/cy-api": "^2.2.1",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
     "@faker-js/faker": "^7.6.0",
+    "@shelex/cypress-allure-plugin": "^2.34.0",
     "cypress": "^12.0.2",
-    "esbuild": "^0.16.4"    
+    "cypress-mochawesome-reporter": "^3.2.3",
+    "esbuild": "^0.16.4"
   }
 }
