@@ -8,11 +8,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        name: Setup npm package
-        command: npm init -y && npm install
       - name: Chrome
         uses: cypress-io/github-action@v5
         timeout-minutes: 10
         with:
-          command: npm test
+          build: npm run build
+          start: npm start
           browser: chrome
