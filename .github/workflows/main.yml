@@ -10,7 +10,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: cypress run
-        uses: cypress-io/github-actions@v5
         with: 
           build: npm ci
           start: npm run report
