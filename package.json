@@ -7,6 +7,7 @@
     "open": "npx cypress open --e2e --browser chrome",
     "chrome": "npx cypress run --e2e --browser chrome",
     "edge": "npx cypress run --e2e --browser edge",
+    "firefox": "npx cypress run --e2e --browser firefox",
     "runTHRNDL-536": "npx cypress run --e2e --browser chrome --env tags=\"@THRNDL-536\"",
     "runPositive": "npx cypress run --e2e --browser chrome --env tags=\"@Positve\"",
     "runNegative": "npx cypress run --e2e --browser chrome --env tags=\"@Negative\"",

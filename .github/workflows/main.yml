@@ -2,7 +2,7 @@ name: main
 on: [push]
 
 jobs:
-  Chrome:
+  cross-browser:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
