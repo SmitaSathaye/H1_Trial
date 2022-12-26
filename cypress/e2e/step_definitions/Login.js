@@ -13,7 +13,7 @@ Then("User login with the username {string} and password {string}", (name,pass) 
   loginPage.login(name, pass) 
 });
 
-Given("Page has text {string}", function (text) {
+Given("Page has text {string}", (text) => {
   cy.contains(text)
 });
 

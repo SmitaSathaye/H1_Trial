@@ -21,7 +21,7 @@ import {
     cartPage.removeProduct(product)  
   });
 
-  Given("User clicks checkout", function () {
+  Given("User clicks checkout", () => {
    cartPage.checkout()
   });
 
