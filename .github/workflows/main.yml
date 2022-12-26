@@ -10,10 +10,8 @@ jobs:
       - name: Chrome run
         uses: cypress-io/github-action@v4.2.0 
         with:
-          command: npm run report
-          browser: chrome
+          command: npm run chrome
       - name: Edge run
         uses: cypress-io/github-action@v4.2.0 
         with:
-          command: npm run report
-          browser: edge      
+          command: npm run edge

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "open": "npx cypress open --e2e --browser chrome",
-    "report": "npx cypress run --e2e",
+    "chrome": "npx cypress run --e2e --browser chrome",
+    "edge": "npx cypress run --e2e --browser edge",
     "runTHRNDL-536": "npx cypress run --e2e --browser chrome --env tags=\"@THRNDL-536\"",
     "runPositive": "npx cypress run --e2e --browser chrome --env tags=\"@Positve\"",
     "runNegative": "npx cypress run --e2e --browser chrome --env tags=\"@Negative\"",
